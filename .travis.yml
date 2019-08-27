@@ -1,0 +1,19 @@
+---
+
+language: ruby
+
+cache: bundler
+
+rvm:
+  - 2.6.3
+
+before_install: gem install bundler -v 2.0.2
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: A9o4kxjM/1L5YKpt+XHhfhaJUT+wzRsLb0hUpJtZXOPcRmjB/gFItcS6ah+q73Un9t6lnS5UeVf7xpJNoqs06BZ8xdQcemv0czAry7ZtAV69Dc7EqKYrp3QFETkizcWSRYl3sHRdVpsdfCoRYnuNGqPyfRDd6CepvMudNE7xdV2DrvVWR86X/LMFDF0m37DOBNbvzMercpx2RSr6hu4bPYXhtbk7FYRs7QyQl+srtNUjOkhMM+Iv5YVFaXuaoq57gARsb8rT4baLQph3f414On6bZW5im433p0evimNZxw6WbxoAgLWCLItZnw+jijjdNwaOVqu24bC7rMRUT/NG7VzHN7zE3CA9T2cc4FgQW3vbMejIq3GqE1or+Ns5/uV26+NmUAbPcgTQ2v2+ipfbvxGUGDKs548SPM86g5nFmaaK9eZfnypyykUfR93ei+I7ZFDW77LSgKDrQA6AsT8fNjBbbmBFOlyEHcX7k9ERmvUgOPz9qit28uyhb8CK9wymWxwiBt8yw/VUvIhkap+IyYKhqeVYu0fJRxGdXm90vsIdZmKXl+0xqmkygKJCtQ9ozlAqNjHF7Oh7JkIEDlOu/x/6a/GreXaR+kOjTjNxttay94KBPYnW0Qx5FgnWka6ImXH0QQu6vhjH3YvZ55QDDiGXeZL9jrpn4mNAhAFdFqk=
+  gem: uuid_v6
+  on:
+    tags: true
+    repo: v-kolesnikov/uuid_v6
