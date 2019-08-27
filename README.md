@@ -1,6 +1,7 @@
 # UUIDv6
 
 [![Build Status](https://travis-ci.org/v-kolesnikov/uuid_v6.svg?branch=master)](https://travis-ci.org/v-kolesnikov/uuid_v6)
+[![Gem Version](https://badge.fury.io/rb/uuid_v6.svg)](https://badge.fury.io/rb/uuid_v6)
 
 UUID version 6 implementation in Ruby. See http://gh.peabody.io/uuidv6/ for details.
 
