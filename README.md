@@ -5,6 +5,8 @@
 
 UUID version 6 implementation in Ruby. See http://gh.peabody.io/uuidv6/ for details.
 
+UPD (2020-07-15): Consider using [ULID](https://github.com/ulid/spec) instead.
+
 ## Installation
 
 Add this line to your application's Gemfile:
