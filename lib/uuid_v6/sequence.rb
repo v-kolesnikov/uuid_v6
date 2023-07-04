@@ -21,7 +21,7 @@ module UUIDv6
       tlo2 = uh[5...8]
       tmid = uh[8...12]
       thig = uh[13...16]
-      rest = uh[16...]
+      rest = uh[16..-1]
       uh6 = thig + tmid + tlo1 + '6' + tlo2 + rest
       to_uuid(uh6)
     end
@@ -29,7 +29,7 @@ module UUIDv6
     private
 
     def to_uuid(str)
-      [str[0..7], str[8..11], str[12..15], str[16..19], str[20..]].join('-')
+      [str[0..7], str[8..11], str[12..15], str[16..19], str[20..-1]].join('-')
     end
   end
 end
