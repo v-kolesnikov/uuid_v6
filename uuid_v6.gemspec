@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/uuid_v6/version"
+require File.expand_path("../lib/uuid_v6/version", __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name          = "uuid_v6"
