@@ -1,3 +1,4 @@
+![](https://github.com/v-kolesnikov/uuid_v6/actions/workflows/ruby.yml/badge.svg)
 [![Gem Version](https://badge.fury.io/rb/uuid_v6.svg)](https://badge.fury.io/rb/uuid_v6)
 
 # UUIDv6
