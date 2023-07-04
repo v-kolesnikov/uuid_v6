@@ -3,6 +3,10 @@
 
 # UUIDv6
 
+**TL;DR:** UUIDv6 based on UUIDv1. `SecureRandom.uuid` != UUIDv1 != UUIDv6. `SecureRandom.uuid` is UUIDv4.
+
+---
+
 **UUID v6** pure Ruby implementation. See http://gh.peabody.io/uuidv6/ for details.
 
 The expected[^1] use case for UUIDv6 is as a drop-in replacement for UUIDv1 which offers improved DB locality. If you don’t have the requirement to keep compatibility with UUIDv1 the suggestion is to use UUIDv7 instead. The only real difference between UUIDv6 and UUIDv1 is the order of the timestamp bits. Starting with the 60-bit timestamp, the first 48 bits of the timestamp come first in the UUID (the specification splits this between time_high, and time_mid likely to keep the same terms as RFC 4122). The next 4 bits contain the version (0110 in this case for v6) and then the final 12 bits of the timestamp can be found. This leads to the following difference:
